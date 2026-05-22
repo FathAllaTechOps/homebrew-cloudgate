@@ -7,11 +7,11 @@ class AwsEksLogin < Formula
 
   def install
     bin.install "bin/aws-login.sh" => "aws-login"
-    bin.install "bin/eks-allow.sh" => "eks-allow"
+    bin.install "bin/eks-allowip.sh" => "eks-allowip"
   end
 
   test do
     system "#{bin}/aws-login", "--help"
-    system "#{bin}/eks-allow", "--help"
+    system "#{bin}/eks-allowip", "--help"
   end
 end
