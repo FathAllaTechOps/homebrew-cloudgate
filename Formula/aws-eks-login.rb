@@ -1,9 +1,9 @@
 class AwsEksLogin < Formula
   desc "AWS SSO login and EKS IP whitelisting CLI tools"
   homepage "https://github.com/FathAllaTechOps/aws-eks-login"
-  url "https://github.com/FathAllaTechOps/aws-eks-login/archive/v1.1.0.tar.gz"
-  sha256 "2f1c5883b00564ce5baf91aa6323011093c625769be2c7fe3dbd78548696af76"
-  version "v1.1.0"
+  url "https://github.com/FathAllaTechOps/aws-eks-login/archive/v1.2.0.tar.gz"
+  sha256 "2d94feab293ceb5778650f750b02aaf6cf54eeab41875cb294a80ed0452857e5"
+  version "v1.2.0"
 
   def install
     bin.install "bin/aws-login.sh" => "aws-login"
