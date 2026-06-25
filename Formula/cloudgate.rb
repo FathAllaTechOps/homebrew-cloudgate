@@ -6,14 +6,14 @@ class Cloudgate < Formula
   version "v2.1.0"
 
   def install
-    bin.install "bin/aws-login.sh" => "aws-login"
-    bin.install "bin/eks-allowip.sh" => "eks-allowip"
     bin.install "bin/cloudgate.sh" => "cloudgate"
+    bin.install "bin/cloudgate-saml.sh" => "cloudgate-saml"
+    bin.install "bin/eks-allowip.sh" => "eks-allowip"
   end
 
   test do
     system "#{bin}/cloudgate", "--help"
-    system "#{bin}/aws-login", "--help"
+    system "#{bin}/cloudgate-saml", "--help"
     system "#{bin}/eks-allowip", "--help"
   end
 end
