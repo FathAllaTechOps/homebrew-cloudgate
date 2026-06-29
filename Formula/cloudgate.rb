@@ -1,9 +1,9 @@
 class Cloudgate < Formula
   desc "AWS authentication and EKS IP whitelisting CLI toolkit"
   homepage "https://github.com/FathAllaTechOps/cloudgate"
-  url "https://github.com/FathAllaTechOps/cloudgate/archive/v2.8.0.tar.gz"
-  sha256 "49e2669a2bd5304a5d025db1ec8f4ce1c5193683ef2aa620a756a0fc50f703a9"
-  version "v2.8.0"
+  url "https://github.com/FathAllaTechOps/cloudgate/archive/v2.9.0.tar.gz"
+  sha256 "d8a3ca457c2ac6d05131e78a38d3ba916213fbd1147da9a6e9c748f67a806ec2"
+  version "v2.9.0"
 
   def install
     bin.install "bin/cloudgate.sh" => "cloudgate"
